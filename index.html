@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Test work</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="#" method="POST" id="regForm">
+      <section class="text">
+        <div class="container">
+          <div class="col-md-12">
+            <h1 style="font-size: 35px;">Thank you for choosing to sebscribe to PDFfiller services!</h1>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="row">
+          <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 content">
+              <div class="col-sm-12 hidden-md hidden-lg img-card"><img src="img/card-sys.png"></div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="col-md-12 col-sm-12 input-block">
+                  <div class="input-block">
+                    <div class="inputs">
+                      <h2>Cardhoder Name</h2><span class="error-mess-name empty-tooltip" style="display:none;">Required failed.
+                        <h3>Cant be empty</h3></span>
+                      <input class="empty" id="name" type="text" placeholder="First Name"><span class="error-mess-name2 empty-tooltip" style="display:none;">Required failed.
+                        <h3>Cant be empty</h3></span>
+                      <input class="empty" id="name2" type="text" placeholder="Last Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="input-block">
+                    <div class="inputs pass">
+                      <h2>Card Number</h2><span class="error-mess-cardnum empty-tooltip" style="display:none;">Required failed.
+                        <h3>Cant be empty</h3></span>
+                      <input class="empty" id="cardnum" type="password" placeholder=".... .... .... ...."><img class="card hidden-sm" src="img/card-sys.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="input-block">
+                    <div class="selects">
+                      <h2>Exp. Date</h2>
+                      <div class="date"><span class="error-mess-sel-1 hidden-sm empty-tooltip" style="display:none;">Required failed.
+                          <h3>Cant be empty</h3></span>
+                        <select class="empty" id="sel-1" size="1">
+                          <option value>MM</option>
+                          <option>12</option>
+                        </select>
+                        <li>/</li><span class="error-mess-sel-2 hidden-sm empty-tooltip" style="display:none;">Required failed.
+                          <h3>Cant be empty</h3></span>
+                        <select class="empty" id="sel-2">
+                          <option value>YYYY</option>
+                          <option>2017</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-cvv">
+                      <h2 class="name">CVV/CVC</h2><span class="error-mess-cvv hidden-sm empty-tooltip" style="display:none;">Required failed.
+                        <h3>Cant be empty</h3></span><span class="hidden-sm" id="cvv-info" style="display:none;">
+                        <div class="card-v-m" style="border-right: 1px solid #e0e0e0;border-right: 1px solid #e0e0e0;"><img src="img/card-1.png">
+                          <div class="info-v-m">
+                            <h1>Visa, MasterCard</h1>
+                            <h2>3-Digit Verification Number</h2>
+                          </div>
+                        </div>
+                        <div class="card-american" style="padding-left: 8px;"><img src="img/card-2.png">
+                          <div class="info-american">
+                            <h1>American Express</h1>
+                            <h2>4-Digit Verification Number</h2>
+                          </div>
+                        </div></span><span class="question fa fa-question-circle-o"></span>
+                      <input class="kode empty" id="cvv" type="text" placeholder="XXXX">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="input-block">
+                    <div class="inputs zip">
+                      <h2>Zip/Postal Code</h2><span class="error-mess-zip empty-tooltip" style="display:none;">Required failed.
+                        <h3>Cant be empty</h3></span>
+                      <input class="empty" id="zip" type="text" placeholder="01001">
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 hidden-sm hidden-md col-sm-12">
+                  <div class="col-md-12 col-sm-12"></div>
+                  <div>
+                    <div class="button">Start My Subscription for $19.99/mo.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 hidden-lg col-sm-12">
+                <div class="col-md-12 col-sm-12">
+                  <div class="paypal-small">
+                    <h2>Or pay with PayPal</h2>
+                    <div class="logo-small"><img src="img/logo-pay.png"></div>
+                  </div>
+                  <div></div>
+                  <div>
+                    <div class="button">Start My Subscription for $19.99/mo.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 hidden-sm hidden-md">
+                <div class="paypal">
+                  <h2>Or pay with PayPal</h2>
+                  <div class="logo"><img src="img/logo-pay.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

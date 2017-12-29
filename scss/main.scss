@@ -1,0 +1,471 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.text {
+    h1 {
+        text-align: center;
+    }
+}
+@mixin cvv($width) {
+    font-size: 40px;
+    width: $width;
+    padding: 14px 20px;
+}
+.form {
+    margin-top: 40px;
+    .container {
+        @media (max-width: 1000px) {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .content {
+        @media (max-width: 1200px) and (min-width: 1000px) {
+            padding: 0px 177px;
+        }
+    }
+    .img-card {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 24px 0;
+        img {
+            height: 89px;
+            width: 522px;
+        }
+    }
+    .input-text {
+            padding: 0 10px;
+            display: inline-block;
+    }
+    .input-block {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .inputs, .selects, .date, .input-cvv {
+        display: inline-block;
+    }
+    .inputs, .input-block {
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+    .pass input, .zip input {
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+    .card {
+        margin-left: 10px;
+    }
+    .date {
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+    .selects {
+        margin-left: 5px;
+        @media (max-width: 1000px) {
+            width: 56%;
+        }
+    }
+    .input-cvv {
+        @media (max-width: 1000px) {
+            padding-left: 68px;
+            width: 43%;
+            display: inline-block;
+        }
+    }
+    .question {
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        position: absolute;
+        right: 50px;
+        bottom: 18px;
+        color: #008eff;
+        line-height: 22px;
+        padding-left: 4px;
+        @media (max-width: 1200px) and (min-width: 1000px) {
+            right: 82px;
+        }
+        @media (max-width: 1000px) {
+            width: 60px;
+            height: 60px;
+            right: 47px;
+            bottom: 19px;
+            font-size: 49px;
+            line-height: 55px;
+        }
+    }
+    #cvv-info {
+        position: absolute;
+        width: 250px;
+        padding: 14px;
+        height: 161px;
+        border: 1px solid #e0e0e0;
+        z-index: 1;
+        bottom: 57px;
+        right: 69px;
+        background: #fff;
+        box-shadow: 0 0 5px #c7c7c7;
+        @media (min-width: 1200px){
+            right: 35px
+        }
+        &:after {
+            content: ' ';
+            border-top: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            position: absolute;
+            bottom: -9px;
+            right: 7px;
+            
+        }
+        &:before {
+            content: ' ';
+            border-top: 10px solid #e0e0e0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            position: absolute;
+            bottom: -10px;
+            right: 7px;
+            
+        }
+        .card-v-m, .card-american {
+            width: 49%;
+            display: inline-block;
+            img {
+                width: 95px;
+            }
+            .info-v-m, .info-american {
+                h1 {
+                    font-size: 11px;
+                    font-weight: 600;
+                    text-align: start;
+                }
+                h2 {
+                    text-align: start;
+                    font-size: 11px;
+                    font-weight: 200;
+                    margin: 0;
+                }
+            }        
+        }
+    }
+    .name {
+        @media (max-width: 1000px) {
+            margin: 10px 0;
+            width: 100% !important;
+            margin: 11px 3px !important;
+        }
+    }
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 6px;
+        text-align: end;
+        display: inline-block;
+        width: 113px;
+        @media (max-width: 1000px) {
+            font-size: 27px;
+            margin: 11px 3px;
+            text-align: start;
+            width: 100%;
+        }
+    }
+    .input-block .name {
+        width: auto;
+        margin-left: 16px;
+    }
+    input, select {
+        padding: 5px;
+        border: 2px solid #e0e0e0;
+        border-radius: 5px;
+        color: #9d9c9c;
+    }
+    select option {
+            font-size: 20px;
+    }
+    #sel-1 {
+        @media (max-width: 1000px) {
+            @include cvv(195px);
+        }      
+    }
+    #sel-2 {
+        @media (max-width: 1000px) {
+            @include cvv(227px);
+        } 
+    }
+    input {
+        width: 160px;
+        margin: 0 6px;
+        @media (max-width: 1000px) {
+            width: 49%;
+            margin: 0 3px;  
+            font-size: 40px;
+            padding: 14px 20px;
+        }
+        
+    }
+    li {
+        list-style: none;
+        width: 10px;
+        font-size: 16px;
+        display: inline;
+        margin: 6px;
+        @media (max-width: 1000px) {
+            font-size: 30px;
+            margin: 21px;
+        }
+    }
+    h3 {
+        display: inline;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 15px;
+    }
+    .kode {
+        width: 76px;
+        @media (max-width: 1000px) {
+            padding: 14px 20px;
+            margin: 0;
+            height: 78px;
+            width: 100%;
+        }
+    }
+    ::-webkit-input-placeholder {color:#9d9c9c;}
+    ::-moz-placeholder          {color:#9d9c9c;}
+    :-moz-placeholder           {color:#9d9c9c;}
+    :-ms-input-placeholder      {color:#9d9c9c;}
+    .button {
+        background: #ffa600;
+        background: linear-gradient(to top, #ff7900, #ffa600);
+        height: 38px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        line-height: 38px;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 331px;
+        margin-left: 135px;
+        &:hover {
+            background: linear-gradient(to top, #ffa600, #ff7900);           
+        }
+        @media (max-width: 1000px) {
+            height: 89px;
+            font-size: 40px;
+            line-height: 84px;
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .paypal-small {
+        background: #f8f6f6;
+        border: 1px solid #bab9b9;
+        width: 331px;
+        margin-left: 135px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        padding: 14px;
+        border-radius: 5px;
+        @media (max-width: 1000px) {
+            width: 100%;
+            display: inline-flex;
+            padding: 0 31px;
+            margin: 25px 0;
+        }
+        h2 {
+            font-size: 15px;
+            text-align: center;
+            font-weight: 500;
+            margin: 0;
+            display: inline-block;
+            width: 47%;
+            @media (max-width: 1000px) {
+                font-size: 40px;
+                margin: 66px 0px 66px 29px;
+            }
+        }
+        .logo-small {
+            width: 102px;
+            height: 35px;
+            border-radius: 7px;
+            background: #2699e4;
+            display: inline-block;
+            padding: 6px;
+            margin-left: 53px;
+            @media (max-width: 1000px) {
+                width: 250px;
+                height: 116px;
+                padding: 31px;
+                margin-left: 154px;
+                margin-top: 29px;
+            }
+        }
+        img {
+            width: 73px;
+            height: 19px;
+            @media (max-width: 1000px) {            
+                width: 173px;
+                height: 48px;
+            }
+        }
+    }
+    .paypal {
+        background: #f8f6f6;
+        border: 1px solid #bab9b9;
+        height: 254px;
+        border-radius: 5px;
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            padding: 54px 0 20px 0;
+            margin: 0;
+            display: block;
+            width: auto;
+        }
+        .logo {
+            width: 153px;
+            height: 45px;
+            margin: auto;
+            border-radius: 7px;
+            background: #2699e4;
+            display: flex;
+            padding: 8px;
+            justify-content: center;
+        }
+        img {
+            width: 100px;
+            height: 27px;
+        }
+    }
+    .error {
+        border: 2px solid #d33b3b !important;
+    }
+    @mixin error-mess($left) {
+        width: 188px;
+        height: 34px;
+        display: block;
+        position: absolute;
+        padding: 7px;
+        background: #ffe0e0;
+        border: 1px solid #ff4b4b;
+        line-height: 19px;
+        z-index: 1;
+        left: $left;
+        bottom: 49px;
+        color: #ff4b4b;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    @mixin error-mess-small($left) {
+            width: 436px;
+            height: 89px;
+            padding: 13px;
+            line-height: 63px;
+            left: $left;
+            bottom: 104px;
+            font-size: 28px;  
+            border-radius: 5px;
+    }
+    .error-mess-name, .error-mess-name2, .error-mess-cardnum, .error-mess-sel-1, .error-mess-sel-2, .error-mess-cvv, .error-mess-zip {
+            h3 {
+                font-weight: 100;
+                font-size: 12px;
+                padding: 0;
+                color: #ff4b4b;
+                @media (max-width: 1000px) { 
+                    font-size: 28px;
+                }
+        }
+            &:after {
+                content: ' ';
+                border-top: 10px solid #ffe0e0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                bottom: -9px;
+                margin-left: -10px;
+                display: block;
+                position: absolute;
+                left: 50%;
+        }
+            &:before {
+                content: ' ';
+                border-top: 10px solid #ff4b4b;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                bottom: -11px;
+                margin-left: -10px;
+                display: block;
+                position: absolute;
+                left: 50%;
+        }
+    }
+    .error-mess-name {
+        @include error-mess(26%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 25%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(2%);
+        }
+    }
+    .error-mess-name2 {
+        @include error-mess(60%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 56%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(464px);
+        }
+    }
+    .error-mess-cardnum {
+        @include error-mess(26%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 25%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(26%);
+        }
+    }
+    .error-mess-sel-1 {
+        @include error-mess(16%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 15%;
+        }
+    }
+    .error-mess-sel-2 {
+        @include error-mess(33%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 32%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(2%);
+        }
+    }
+    .error-mess-cvv {
+        @include error-mess(67%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 63%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(2%);
+        }
+    }
+    .error-mess-zip {
+        @include error-mess(26%)
+        @media (min-width: 1000px) and (max-width: 1200px) {
+            left: 25%;
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(2%);
+        }
+        @media (max-width: 1000px) {
+            @include error-mess-small(26%);
+        }
+    }
+}

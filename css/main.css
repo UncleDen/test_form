@@ -1,0 +1,732 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.text h1 {
+  text-align: center;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  .form .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .form .content {
+    padding: 0px 177px;
+  }
+}
+
+.form .img-card {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 24px 0;
+}
+
+.form .img-card img {
+  height: 89px;
+  width: 522px;
+}
+
+.form .input-text {
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.form .input-block {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form .inputs, .form .selects, .form .date, .form .input-cvv {
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .form .inputs, .form .input-block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .pass input, .form .zip input {
+    width: 100%;
+  }
+}
+
+.form .card {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .form .date {
+    width: 100%;
+  }
+}
+
+.form .selects {
+  margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  .form .selects {
+    width: 56%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .input-cvv {
+    padding-left: 68px;
+    width: 43%;
+    display: inline-block;
+  }
+}
+
+.form .question {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  position: absolute;
+  right: 50px;
+  bottom: 18px;
+  color: #008eff;
+  line-height: 22px;
+  padding-left: 4px;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .form .question {
+    right: 82px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .question {
+    width: 60px;
+    height: 60px;
+    right: 47px;
+    bottom: 19px;
+    font-size: 49px;
+    line-height: 55px;
+  }
+}
+
+.form #cvv-info {
+  position: absolute;
+  width: 250px;
+  padding: 14px;
+  height: 161px;
+  border: 1px solid #e0e0e0;
+  z-index: 1;
+  bottom: 57px;
+  right: 69px;
+  background: #fff;
+  box-shadow: 0 0 5px #c7c7c7;
+}
+
+@media (min-width: 1200px) {
+  .form #cvv-info {
+    right: 35px;
+  }
+}
+
+.form #cvv-info:after {
+  content: ' ';
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: -9px;
+  right: 7px;
+}
+
+.form #cvv-info:before {
+  content: ' ';
+  border-top: 10px solid #e0e0e0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  right: 7px;
+}
+
+.form #cvv-info .card-v-m, .form #cvv-info .card-american {
+  width: 49%;
+  display: inline-block;
+}
+
+.form #cvv-info .card-v-m img, .form #cvv-info .card-american img {
+  width: 95px;
+}
+
+.form #cvv-info .card-v-m .info-v-m h1, .form #cvv-info .card-v-m .info-american h1, .form #cvv-info .card-american .info-v-m h1, .form #cvv-info .card-american .info-american h1 {
+  font-size: 11px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.form #cvv-info .card-v-m .info-v-m h2, .form #cvv-info .card-v-m .info-american h2, .form #cvv-info .card-american .info-v-m h2, .form #cvv-info .card-american .info-american h2 {
+  text-align: start;
+  font-size: 11px;
+  font-weight: 200;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .form .name {
+    margin: 10px 0;
+    width: 100% !important;
+    margin: 11px 3px !important;
+  }
+}
+
+.form h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 6px;
+  text-align: end;
+  display: inline-block;
+  width: 113px;
+}
+
+@media (max-width: 1000px) {
+  .form h2 {
+    font-size: 27px;
+    margin: 11px 3px;
+    text-align: start;
+    width: 100%;
+  }
+}
+
+.form .input-block .name {
+  width: auto;
+  margin-left: 16px;
+}
+
+.form input, .form select {
+  padding: 5px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  color: #9d9c9c;
+}
+
+.form select option {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .form #sel-1 {
+    font-size: 40px;
+    width: 195px;
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form #sel-2 {
+    font-size: 40px;
+    width: 227px;
+    padding: 14px 20px;
+  }
+}
+
+.form input {
+  width: 160px;
+  margin: 0 6px;
+}
+
+@media (max-width: 1000px) {
+  .form input {
+    width: 49%;
+    margin: 0 3px;
+    font-size: 40px;
+    padding: 14px 20px;
+  }
+}
+
+.form li {
+  list-style: none;
+  width: 10px;
+  font-size: 16px;
+  display: inline;
+  margin: 6px;
+}
+
+@media (max-width: 1000px) {
+  .form li {
+    font-size: 30px;
+    margin: 21px;
+  }
+}
+
+.form h3 {
+  display: inline;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.form .kode {
+  width: 76px;
+}
+
+@media (max-width: 1000px) {
+  .form .kode {
+    padding: 14px 20px;
+    margin: 0;
+    height: 78px;
+    width: 100%;
+  }
+}
+
+.form ::-webkit-input-placeholder {
+  color: #9d9c9c;
+}
+
+.form ::-moz-placeholder {
+  color: #9d9c9c;
+}
+
+.form :-moz-placeholder {
+  color: #9d9c9c;
+}
+
+.form :-ms-input-placeholder {
+  color: #9d9c9c;
+}
+
+.form .button {
+  background: #ffa600;
+  background: linear-gradient(to top, #ff7900, #ffa600);
+  height: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 331px;
+  margin-left: 135px;
+}
+
+.form .button:hover {
+  background: linear-gradient(to top, #ffa600, #ff7900);
+}
+
+@media (max-width: 1000px) {
+  .form .button {
+    height: 89px;
+    font-size: 40px;
+    line-height: 84px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.form .paypal-small {
+  background: #f8f6f6;
+  border: 1px solid #bab9b9;
+  width: 331px;
+  margin-left: 135px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .form .paypal-small {
+    width: 100%;
+    display: inline-flex;
+    padding: 0 31px;
+    margin: 25px 0;
+  }
+}
+
+.form .paypal-small h2 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  width: 47%;
+}
+
+@media (max-width: 1000px) {
+  .form .paypal-small h2 {
+    font-size: 40px;
+    margin: 66px 0px 66px 29px;
+  }
+}
+
+.form .paypal-small .logo-small {
+  width: 102px;
+  height: 35px;
+  border-radius: 7px;
+  background: #2699e4;
+  display: inline-block;
+  padding: 6px;
+  margin-left: 53px;
+}
+
+@media (max-width: 1000px) {
+  .form .paypal-small .logo-small {
+    width: 250px;
+    height: 116px;
+    padding: 31px;
+    margin-left: 154px;
+    margin-top: 29px;
+  }
+}
+
+.form .paypal-small img {
+  width: 73px;
+  height: 19px;
+}
+
+@media (max-width: 1000px) {
+  .form .paypal-small img {
+    width: 173px;
+    height: 48px;
+  }
+}
+
+.form .paypal {
+  background: #f8f6f6;
+  border: 1px solid #bab9b9;
+  height: 254px;
+  border-radius: 5px;
+}
+
+.form .paypal h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  padding: 54px 0 20px 0;
+  margin: 0;
+  display: block;
+  width: auto;
+}
+
+.form .paypal .logo {
+  width: 153px;
+  height: 45px;
+  margin: auto;
+  border-radius: 7px;
+  background: #2699e4;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+}
+
+.form .paypal img {
+  width: 100px;
+  height: 27px;
+}
+
+.form .error {
+  border: 2px solid #d33b3b !important;
+}
+
+.form .error-mess-name h3, .form .error-mess-name2 h3, .form .error-mess-cardnum h3, .form .error-mess-sel-1 h3, .form .error-mess-sel-2 h3, .form .error-mess-cvv h3, .form .error-mess-zip h3 {
+  font-weight: 100;
+  font-size: 12px;
+  padding: 0;
+  color: #ff4b4b;
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-name h3, .form .error-mess-name2 h3, .form .error-mess-cardnum h3, .form .error-mess-sel-1 h3, .form .error-mess-sel-2 h3, .form .error-mess-cvv h3, .form .error-mess-zip h3 {
+    font-size: 28px;
+  }
+}
+
+.form .error-mess-name:after, .form .error-mess-name2:after, .form .error-mess-cardnum:after, .form .error-mess-sel-1:after, .form .error-mess-sel-2:after, .form .error-mess-cvv:after, .form .error-mess-zip:after {
+  content: ' ';
+  border-top: 10px solid #ffe0e0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -9px;
+  margin-left: -10px;
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
+.form .error-mess-name:before, .form .error-mess-name2:before, .form .error-mess-cardnum:before, .form .error-mess-sel-1:before, .form .error-mess-sel-2:before, .form .error-mess-cvv:before, .form .error-mess-zip:before {
+  content: ' ';
+  border-top: 10px solid #ff4b4b;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -11px;
+  margin-left: -10px;
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
+.form .error-mess-name {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 26%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-name {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-name {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 2%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+.form .error-mess-name2 {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 60%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-name2 {
+    left: 56%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-name2 {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 464px;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+.form .error-mess-cardnum {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 26%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-cardnum {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-cardnum {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 26%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+.form .error-mess-sel-1 {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 16%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-sel-1 {
+    left: 15%;
+  }
+}
+
+.form .error-mess-sel-2 {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 33%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-sel-2 {
+    left: 32%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-sel-2 {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 2%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+.form .error-mess-cvv {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 67%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-cvv {
+    left: 63%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-cvv {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 2%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+.form .error-mess-zip {
+  width: 188px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  padding: 7px;
+  background: #ffe0e0;
+  border: 1px solid #ff4b4b;
+  line-height: 19px;
+  z-index: 1;
+  left: 26%;
+  bottom: 49px;
+  color: #ff4b4b;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form .error-mess-zip {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-zip {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 2%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form .error-mess-zip {
+    width: 436px;
+    height: 89px;
+    padding: 13px;
+    line-height: 63px;
+    left: 26%;
+    bottom: 104px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+}

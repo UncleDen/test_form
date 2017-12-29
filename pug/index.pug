@@ -1,0 +1,101 @@
+doctype html
+html(lang="ru")
+ head
+  meta(charset="utf-8")
+  title= "Test work"
+  link(rel="stylesheet" href="css/main.css")
+  link(rel="stylesheet" href="css/font-awesome.min.css")
+  link(rel="stylesheet" href="css/bootstrap.css")
+  script(src="js/jquery-3.1.1.min.js")
+  script(src="js/app.js")
+  script(src="js/bootstrap.min.js")
+ body
+  form(action="#" method="POST" id="regForm")
+   section.text
+    div.container
+      div.col-md-12
+       h1(style="font-size: 35px;")= "Thank you for choosing to sebscribe to PDFfiller services!"
+   section.form
+    div.row
+      div.container
+       div.col-lg-12.col-md-12.col-sm-12.content
+        div.col-sm-12.hidden-md.hidden-lg.img-card
+         img(src="img/card-sys.png")
+        div.col-lg-6.col-sm-12
+         div.col-md-12.col-sm-12.input-block
+          div.input-block
+           div.inputs
+            h2= "Cardhoder Name"
+            span.error-mess-name.empty-tooltip(style="display:none;")= "Required failed."
+             h3= "Cant be empty"
+            input#name.empty(type="text" placeholder= "First Name")
+            span.error-mess-name2.empty-tooltip(style="display:none;")= "Required failed."
+             h3= "Cant be empty"
+            input#name2.empty(type="text" placeholder= "Last Name")
+         div.col-md-12.col-sm-12
+          div.input-block
+           div.inputs.pass
+            h2= "Card Number"
+            span.error-mess-cardnum.empty-tooltip(style="display:none;")= "Required failed."
+             h3= "Cant be empty"
+            input#cardnum.empty(type="password" placeholder=".... .... .... ....")
+            img.card.hidden-sm(src="img/card-sys.png")
+         div.col-md-12.col-sm-12
+          div.input-block
+           div.selects
+            h2= "Exp. Date"
+            div.date
+             span.error-mess-sel-1.hidden-sm.empty-tooltip(style="display:none;")= "Required failed."
+              h3= "Cant be empty"
+             select#sel-1.empty(size="1")
+              option(value)= "MM" 
+              option= "12"
+             li= "/"
+             span.error-mess-sel-2.hidden-sm.empty-tooltip(style="display:none;")= "Required failed."
+              h3= "Cant be empty"
+             select#sel-2.empty
+              option(value)= "YYYY"
+              option= "2017"
+           div.input-cvv
+            h2.name= "CVV/CVC"
+            span.error-mess-cvv.hidden-sm.empty-tooltip(style="display:none;")= "Required failed."
+             h3= "Cant be empty"
+            span#cvv-info.hidden-sm(style="display:none;")
+              div.card-v-m(style="border-right: 1px solid #e0e0e0;border-right: 1px solid #e0e0e0;")
+               img(src="img/card-1.png")
+               div.info-v-m
+                h1= "Visa, MasterCard"
+                h2= "3-Digit Verification Number"
+              div.card-american(style="padding-left: 8px;")
+               img(src="img/card-2.png")
+               div.info-american
+                h1= "American Express"
+                h2= "4-Digit Verification Number"
+            span.question.fa.fa-question-circle-o
+            input.kode#cvv.empty(type="text" placeholder="XXXX")
+         div.col-md-12.col-sm-12
+          div.input-block
+           div.inputs.zip
+            h2= "Zip/Postal Code"
+            span.error-mess-zip.empty-tooltip(style="display:none;")= "Required failed."
+             h3= "Cant be empty"
+            input#zip.empty(type="text" placeholder="01001")
+           div
+         div.col-lg-4.hidden-sm.hidden-md.col-sm-12
+          div.col-md-12.col-sm-12
+          div
+           div.button= "Start My Subscription for $19.99/mo."
+        div.col-lg-4.hidden-lg.col-sm-12
+         div.col-md-12.col-sm-12
+          div.paypal-small
+           h2= "Or pay with PayPal"
+           div.logo-small
+            img(src="img/logo-pay.png")
+          div
+          div
+           div.button= "Start My Subscription for $19.99/mo."
+        div.col-lg-4.hidden-sm.hidden-md
+         div.paypal
+          h2= "Or pay with PayPal"
+          div.logo
+           img(src="img/logo-pay.png")
